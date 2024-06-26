@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="/login/styles/form_login.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+  </head>
+  <body>
+    <form class="form_main">
+        <div class="form_header_box">
+            <h1>Login</h1>
+        </div>
+        <div class="form_input_box">
+            <input
+              id="email"
+              class="input_element"
+              placeholder="E-mail"
+              type="email"
+            />
+            <input
+              id="password"
+              placeholder="Senha"
+              type="password"
+              autocomplete="current-password"
+            />
+        </div>
+        <div class="form_button_box">
+            <button id="button_submit" class="button_element" type="submit">Entrar</button>
+            <a class="link_element" href="./esqueciSenha.html">Esqueci minha senha</a>
+            <a class="link_element" href="./cadastro.html">Não tem uma conta? Cadastre-se</a>
+        </div>
+    </form>
+  </body>
+  <script src="/login/js/login.js"></script>
+</html>

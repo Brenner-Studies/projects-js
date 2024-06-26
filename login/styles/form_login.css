@@ -1,0 +1,93 @@
+/*
+    EXPLICANDO O CÓDIGO
+
+    - Toda classe que possui um final BOX é uma DIV. 
+    Geralmente o pai de outros elementos presentes. 
+    Usei um conceito de CAIXAS para separar bem cada elemento dentro do forms.
+
+    - Toda classe que possui um final ELEMENT é um elemento pequeno dentro de uma BOX.
+
+
+    - Optei por utilizar o flexbox para facilitar a leitura e manutenção do código.
+    - Larguras e alturas em BOX serão somente em VH / VW
+    - Paddings e margins serão somente em porcentagem para facilitar na responsividade.
+
+*/
+
+body {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    background-color: black;
+    /* background-image: url('/login/img/super\ mario\ world\ starting\ screen\ gif.gif');
+    background-size:80%;
+      background-position: center;
+      background-repeat: no-repeat; */
+}
+
+.form_main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 5%;
+    width: 50vw;
+    height: 60vh;
+    padding: 1%;
+}
+
+.form_header_box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    /* background-color: yellow; */
+}
+
+.form_input_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 40%;
+    padding: 1%;
+    /* background-color: blue; */
+}
+
+.input_element {
+    font-size: large;
+    border: none;
+    border-bottom: solid red 1px;
+    outline: 0px;
+    height: 40%;
+}
+
+.form_button_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 30%;
+    padding: 1%;
+    /* background-color: green; */
+}
+
+.button_element {
+    width: 100%;
+    height: 50%;
+    cursor: pointer;
+    font-size: large;
+    font-weight: bold;
+    border: none;
+}
+
+.button_element:hover {
+    transition: 1s;
+    background-color: rgb(34, 66, 34);
+    color: white;
+}
+
+.link_element {
+    text-decoration: none;
+    color: black;
+}
